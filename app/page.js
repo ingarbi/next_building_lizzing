@@ -1,12 +1,10 @@
-import Link from "next/link";
-
-
+import Hero from "@/components/Hero";
+import InfoBoxes from "@/components/InfoBoxes";
 export default function Home() {
   return (
-    <main className="bg-red-300">
-      Home
-      <br />
-      <Link href="/properties">Properties Page</Link>
+    <main>
+      <Hero />
+      <InfoBoxes />
     </main>
   );
 }
