@@ -1,7 +1,9 @@
 import Hero from "@/components/Hero";
 import HomeProperties from "@/components/HomeProperties";
 import InfoBoxes from "@/components/InfoBoxes";
-export default function Home() {
+import connectDB from "@/config/database";
+const Home = async () => {
+  await connectDB();
   return (
     <main>
       <Hero />
@@ -9,4 +11,5 @@ export default function Home() {
       <HomeProperties />
     </main>
   );
-}
+};
+export default Home;
